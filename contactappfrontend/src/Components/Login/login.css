@@ -1,0 +1,63 @@
+#loginform {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#login {
+  background-color: #d4e4f7;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  justify-items: center;
+  width: 50vw;
+  align-items: center;
+  align-self: center;
+  box-shadow: 5px 5px #888888;
+}
+.button {
+  box-shadow: 2px 2px #888888;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label,
+input {
+  /* In order to define widths */
+  display: inline-block;
+}
+
+label {
+  width: 30%;
+  /* Positions the label text beside the input */
+  text-align: right;
+}
+
+label + input {
+  width: 30%;
+  /* Large margin-right to force the next element to the new-line
+                and margin-left to create a gutter between the label and input */
+  margin: 0 30% 0 4%;
+}
+label + select {
+  width: 30%;
+  /* Large margin-right to force the next element to the new-line
+                  and margin-left to create a gutter between the label and input */
+  margin: 0 30% 0 4%;
+}
+
+/* Only the submit button is matched by this selector,
+         but to be sure you could use an id or class for that button */
+
+/* input + input {
+  float: right;
+} */
+
+/* #loginform {
+  align-self: center;
+  text-align: center;
+}  */

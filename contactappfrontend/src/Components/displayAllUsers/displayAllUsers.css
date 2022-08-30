@@ -1,0 +1,6 @@
+.pagination {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end space-between;
+  width: 20%;
+}

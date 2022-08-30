@@ -1,0 +1,31 @@
+/* @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700); */
+#admindashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#admindashboardform {
+  display: inline-flex;
+  width: 45%;
+  height: 60vh;
+  margin: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 5px 5px #888888;
+  background-color: #d4e4f7;
+
+  /* background: #40576d; */
+}
+#formadmin {
+  padding: 20px;
+  align-self: center;
+  text-align: center;
+}
+label {
+  padding: 10px;
+}
