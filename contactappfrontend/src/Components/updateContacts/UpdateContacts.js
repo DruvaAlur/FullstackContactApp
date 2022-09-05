@@ -93,6 +93,9 @@ function UpdateContacts() {
       >
         <div id="admindashboardform">
           <form id="formadmin" onSubmit={handleUpdateUser}>
+            <div>
+              <h3>Update Contact</h3>
+            </div>
             <label class="fw-bold">Property</label>
             <select
               id="propertyTobeUpdated"

@@ -112,68 +112,74 @@ function AdminDashboard() {
       <NavBar username={currentUser.username} />
       <div id="admindashboard">
         <div id="admindashboardform">
-          <form onSubmit={handleCreateUserSubmit} id="formadmin">
-            <label class="fw-bold">Firstname:</label>
-            <input
-              type="text"
-              minLength={3}
-              value={fname}
-              onChange={(e) => updateFname(e.target.value)}
-            ></input>
-            <br />
-            <label class="fw-bold">Lastname:</label>
-            <input
-              type="text"
-              minLength={3}
-              value={lname}
-              onChange={(e) => updateLname(e.target.value)}
-            ></input>
-            <br />
-            <label class="fw-bold">Username:</label>
-            <input
-              type="text"
-              required
-              minLength={3}
-              onChange={(e) => updateUsername(e.target.value)}
-            ></input>
-            <br />
-            <label class="fw-bold">Password:</label>
-            <input
-              type="password"
-              id="password"
-              placeholder=" "
-              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
-              value={password}
-              onChange={(e) => updatePassword(e.target.value)}
-            ></input>
-            <a style={{ fontSize: "12px" }}>
-              password must be at least 6 characters with one uppercase, one
-              lowercase, and one number.
-            </a>
-            <br />
-            {/* <label>Role:</label>
+          <br />
+          <div>
+            <form onSubmit={handleCreateUserSubmit} id="formadmin">
+              <div>
+                <h3>Create User</h3>
+              </div>
+              <label class="fw-bold">Firstname:</label>
+              <input
+                type="text"
+                minLength={3}
+                value={fname}
+                onChange={(e) => updateFname(e.target.value)}
+              ></input>
+              <br />
+              <label class="fw-bold">Lastname:</label>
+              <input
+                type="text"
+                minLength={3}
+                value={lname}
+                onChange={(e) => updateLname(e.target.value)}
+              ></input>
+              <br />
+              <label class="fw-bold">Username:</label>
+              <input
+                type="text"
+                required
+                minLength={3}
+                onChange={(e) => updateUsername(e.target.value)}
+              ></input>
+              <br />
+              <label class="fw-bold">Password:</label>
+              <input
+                type="password"
+                id="password"
+                placeholder=" "
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                value={password}
+                onChange={(e) => updatePassword(e.target.value)}
+              ></input>
+              <a style={{ fontSize: "12px" }}>
+                password must be at least 6 characters with one uppercase, one
+                lowercase, and one number.
+              </a>
+              <br />
+              {/* <label>Role:</label>
             <input
               type="text"
               value={role}
               onChange={(e) => updateRole(e.target.value)}
             ></input> */}
-            <label class="fw-bold">Role:</label>
-            <select
-              id="role"
-              name="role"
-              onChange={(e) => {
-                updateRole(e.target.value);
-              }}
-            >
-              <option value="user">user</option>
-              <option value="admin">admin</option>
-            </select>
-            <br />
-            <button class="btn btn-primary button">Create User</button>
-            <br />
-            <br />
-            {statusOfCreateUser}
-          </form>
+              <label class="fw-bold">Role:</label>
+              <select
+                id="role"
+                name="role"
+                onChange={(e) => {
+                  updateRole(e.target.value);
+                }}
+              >
+                <option value="user">user</option>
+                <option value="admin">admin</option>
+              </select>
+              <br />
+              <button class="btn btn-primary button">Create User</button>
+              <br />
+              <br />
+              {statusOfCreateUser}
+            </form>
+          </div>
         </div>
 
         <div id="admindashboardform">

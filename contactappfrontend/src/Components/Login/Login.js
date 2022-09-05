@@ -39,42 +39,49 @@ function Login() {
   return (
     <>
       <div id="loginform">
+        <div class="one">
+          <h1>Login</h1>
+        </div>
         <div id="login">
-          <form onSubmit={handleSubmit} id="loginform">
-            <div>
-              <label class="fw-bold">Username:&nbsp; </label>
-
+          {" "}
+          <div style={{ width: "auto", height: "auto" }}>
+            <form onSubmit={handleSubmit} id="loginform">
               <br />
+              <div>
+                <label class="fw-bold">Username:&nbsp; </label>
 
-              <input
-                required
-                type="text"
-                value={username}
-                onChange={(e) => updateUsername(e.target.value)}
-              ></input>
+                <br />
 
-              <br />
+                <input
+                  required
+                  type="text"
+                  value={username}
+                  onChange={(e) => updateUsername(e.target.value)}
+                ></input>
 
-              <label class="fw-bold">Password:&nbsp;</label>
-              <br />
-              <input
-                required
-                type="password"
-                // pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
-                value={password}
-                onChange={(e) => updatePassword(e.target.value)}
-              ></input>
+                <br />
 
-              <br />
+                <label class="fw-bold">Password:&nbsp;</label>
+                <br />
+                <input
+                  required
+                  type="password"
+                  // pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                  value={password}
+                  onChange={(e) => updatePassword(e.target.value)}
+                ></input>
 
-              <br />
+                <br />
 
-              <button class="btn btn-primary button">Login</button>
-              <br />
-              <br />
-              {loginStatus}
-            </div>
-          </form>
+                <br />
+
+                <button class="btn btn-primary button">Login</button>
+                <br />
+                <br />
+                {loginStatus}
+              </div>
+            </form>
+          </div>
           <br />
         </div>
       </div>

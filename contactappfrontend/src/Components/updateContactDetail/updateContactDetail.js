@@ -92,6 +92,9 @@ function UpdateContactDetail() {
     <>
       <NavBar username={currentUser.username} />
       <form id="formadmin" onSubmit={handleSubmit}>
+        <div>
+          <h3>Update Contact Detail</h3>
+        </div>
         <label class="fw-bold">Property</label>
         <select
           id="propertyTobeUpdated"

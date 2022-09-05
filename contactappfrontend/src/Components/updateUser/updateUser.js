@@ -98,6 +98,10 @@ function UpdateUser() {
       >
         <div id="admindashboardform">
           <form onSubmit={handleUpdateUserSubmit} id="formadmin">
+            {" "}
+            <div>
+              <h3>Update User</h3>
+            </div>
             {/* <label>Property:</label>
       <input
         type="text"
@@ -132,7 +136,6 @@ function UpdateUser() {
               }}
             ></input>
             <br />
-
             <button class="btn btn-primary button">Update User</button>
             <br />
             <br />

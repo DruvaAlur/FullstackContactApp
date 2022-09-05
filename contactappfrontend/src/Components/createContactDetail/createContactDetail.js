@@ -107,6 +107,9 @@ function CreateContactDetail() {
       >
         <div id="admindashboardform">
           <form id="formadmin" onSubmit={handleCreateContactDetail}>
+            <div>
+              <h3>Create Contact Detail</h3>
+            </div>
             <label class="fw-bold">Type:</label>
             <input
               required
